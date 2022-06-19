@@ -21,7 +21,7 @@ item_list = [{
 	name: 'Downloader',
 	icon: 'fas fa-arrow-down',
 	item: [{
-		"url": endpoint + "/tiktok?getData=https://vm.tiktok.com/ZMLMbkp82",
+		"url": endpoint + "/tiktok?url=https://vm.tiktok.com/ZMLMbkp82",
 		"name": "TikTok Downloader"
 	}]
 },
