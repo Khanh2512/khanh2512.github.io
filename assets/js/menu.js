@@ -213,7 +213,7 @@ try {
 			fetch('https://hadi-api.herokuapp.com/api/ip').then(res=>res.json()).then(res=> {
 				res = res.result;
 				if (!region.includes(res.countryCode)) isVPN = true;
-				tag_netinfo.innerHTML = `<b>Địa chỉ IP: </b>${res.ip}<br><b>Nhà cung cấp mạng: </b>${res.isp}<br><b>Thành phố: </b>${res.city}<br><b>Timezone: </b>${res.timezone}<br><b>Quốc gia: </b>${res.country}<br><b>VPN: </b>${region.includes(res.countryCode) ? "false": "true"}<br><b>LATITUDE: </b>${res.latitude}<br>`;
+				tag_netinfo.innerHTML = `<b>Địa chỉ IP: </b>${res.ip}<br><b>Nhà cung cấp mạng: </b>${res.isp}<br><b>Thành phố: </b>${res.city}<br><b>Timezone: </b>${res.timezone}<br><b>Quốc gia: </b>${res.country}<br><b>VPN: </b>${region.includes(res.countryCode) ? "false": "true"}<br>`;
 			});
 		}
 		net();
