@@ -201,7 +201,7 @@ try {
 		setInterval(function() {
 			navigator.getBattery().then(battery=> {
 				battery_level = String(battery.level).split('.')[1];
-				tag_battery_level.innerHTML = `${(battery_level.length <= 1)? oud(Number(battery_level)): battery_level}% <small>${battery.charging}</small>`;
+				tag_battery_level.innerHTML = `${(battery_level.length <= 1)? oud(Number(battery_level)): battery_level}%`;
 			});
 		},
 			10);
