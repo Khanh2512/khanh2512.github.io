@@ -27,11 +27,11 @@ try {
 			let tks = "",
 			region = navigator.language.toLowerCase(),
 			date = new Date();
-			try {
-				region = region.split("-")[0].toLowerCase();
-			}catch(e) {}
 			var dataDays = holiday(date.getDate(), date.getMonth())
-			if (/id|vietnam/.test(region) && dataDays !== null) {
+			console.log(dataDays)
+			console.log(date.getDate())
+			console.log(date.getMonth())
+			if (dataDays !== null) {
 				tks = `<p style="color: red;background: rgba(128,128,128,0.3);">${dataDays.msg}<3<span style="color: white;">Admin</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
 			}
 			else {
@@ -39,7 +39,7 @@ try {
 			}
 
 			Toast.fire({
-				icon: 'fa-solid fa-star',
+				icon: 'info',
 				title: tks
 			});
 		}
