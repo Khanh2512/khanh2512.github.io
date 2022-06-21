@@ -30,22 +30,49 @@ try {
 			try {
 				region = region.split("-")[0].toLowerCase();
 			}catch(e) {}
-			if (/id|vietnam/.test(region) && date.getMonth() == 9 && date.getDate() == 2) {
-				tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Chúc mừng ngày Quốc Khánh 2/9<3<span style="color: white;">ri pahlawan</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
-			} else if (/id|vietnam/.test(region) && date.getMonth() == 11 && date.getDate() == 20) {
-				tks = `<p style="color: black;">Chúc mừng ngày nhà giáo Việt Nam 20/11</p>`;
-			} else if (/id|vietnam/.test(region) && date.getMonth() == 3 && date.getDate() == 8) {
-				tks = tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Chúc mừng ngày Quốc tế Phụ nữ 8/3<3<span style="color: white;">Ok chưa?</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
-			} else {
-				tks = `<p style="color: gray;">Sao lại im lặng như thế này :<</p>`;
+			var dataDays = holiday(date.getDate(), date.getMonth())
+			if (/id|vietnam/.test(region) && dataDays !== null) {
+				tks = `<p style="color: red;background: rgba(128,128,128,0.3);">${dataDays.msg}<3<span style="color: white;">Admin</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
+			}
+			else {
+				tks = `<p style="color: gray;">Một ngày bình thường :<</p>`;
 			}
 
 			Toast.fire({
-				icon: 'info',
+				icon: 'fa-solid fa-star',
 				title: tks
 			});
 		}
 	}
+function holiday(day, month) {
+	var data = [{
+		"msg": "Chúc mừng ngày lễ Quốc khánh",
+		"day": 2,
+		"month": 9
+	},
+	{
+		"msg": "Sinh nhật Thùy Dương <3",
+		"day": 21,
+		"month": 6
+	},
+	{
+		"msg": "Chúc mừng năm mới <3",
+		"day": 1,
+		"month": 1
+	},
+	{
+		"msg": "Chúc mừng ngày lễ tình nhân <3",
+		"day": 2,
+		"month": 14
+	},
+	{
+		"msg": "Chúc mừng ngày quốc tế lao động",
+		"day": 5,
+		"month": 1
+	}]
+	var resulut = data.find(i => i.day == day && i.month == month + 1)
+	return resulut
+}
 	//-- Auto autocapitalize
 	function capitalizeFirstLetter(string) {
 		return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1);
