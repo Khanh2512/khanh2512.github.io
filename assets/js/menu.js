@@ -28,11 +28,8 @@ try {
 			region = navigator.language.toLowerCase(),
 			date = new Date();
 			var dataDays = holiday(date.getDate(), date.getMonth())
-			console.log(dataDays)
-			console.log(date.getDate())
-			console.log(date.getMonth())
 			if (dataDays !== null) {
-				tks = `<p style="color: red;background: rgba(128,128,128,0.3);">${dataDays.msg}<3<span style="color: white;">Admin</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
+				tks = `<p style="color: gray;">${dataDays.msg}/p>`;
 			}
 			else {
 				tks = `<p style="color: gray;">Một ngày bình thường :<</p>`;
