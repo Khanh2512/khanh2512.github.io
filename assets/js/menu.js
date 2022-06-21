@@ -29,10 +29,10 @@ try {
 			date = new Date();
 			var dataDays = holiday(date.getDate(), date.getMonth())
 			if (dataDays !== null) {
-				tks = `<p style="color: gray;">${dataDays.msg}/p>`;
+				tks = `<p style="color: gray;">${dataDays.msg}</p>`;
 			}
 			else {
-				tks = `<p style="color: gray;">Một ngày bình thường :<</p>`;
+				tks = `<p style="color: gray;">Một ngày bình thường...</p>`;
 			}
 
 			Toast.fire({
