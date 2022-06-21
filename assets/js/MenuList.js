@@ -124,6 +124,10 @@ item_list = [{
                 "name": "Đố vui"
             },
             {
+                "url": endpoint + '/game/dovuiv2',
+                "name": "Đố vui 2"
+            },
+            {
                 "url": endpoint + '/game/dhbcv1',
                 "name": "Đuổi hình bắt chữ"
             },
