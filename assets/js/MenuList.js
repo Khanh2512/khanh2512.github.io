@@ -5,7 +5,20 @@ message_list = [{
     timing: '1655701877368'
 }];
 
-item_list = [{
+item_list = [
+    {
+        name: 'Facebook',
+        icon: 'fa-brands fa-facebook',
+        item: [{
+            "url": endpoint + '/finduid?url=https://www.facebook.com/PhamVanDien.User/',
+            "name": "Find UID"
+        },
+        {
+            "url": endpoint + '/info?id=100004253741257',
+            "name": "Get Info"
+        }]
+    },
+    {
         name: 'TikTok',
         icon: 'fa-brands fa-tiktok',
         item: [{
@@ -173,14 +186,6 @@ item_list = [{
                 "name": "COVID 19 DATA"
             }
         ]
-    },
-    {
-        name: 'Facebook',
-        icon: 'fa-brands fa-facebook',
-        item: [{
-            "url": endpoint + '/finduid?url=https://www.facebook.com/PhamVanDien.User/',
-            "name": "Find UID"
-        }]
     },
     {
         name: 'Liên hệ Admin',
