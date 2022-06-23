@@ -36,6 +36,72 @@ item_list = [
         ]
     },
     {
+        name: 'Tạo avatar anime',
+        icon: 'fa-solid fa-user-tie',
+        item: [{
+                "url": endpoint + "/taoanhdep/list",
+                "name": "Danh sách nhân vật"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=name&name=nobita",
+                "name": "Tìm kiếm nhân vật theo tên"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=id&id=30",
+                "name": "Tìm kiếm nhân vật theo ID"
+            },
+            {
+                "url": endpoint + "/taoanhdep/search?type=movie&movie=Conan",
+                "name": "Tìm kiếm nhân vật theo tên phim"
+            },
+            {
+                "url": endpoint + "/taoanhdep/avatarwibu?id=1&chu_nen=Phạm Văn Diện&chu_ky=d-jukie",
+                "name": "Tạo avatar"
+            }
+        ]
+    },
+    {
+        name: 'Canvas',
+        icon: 'fa-solid fa-diagram-lean-canvas',
+        item: [{
+                "url": endpoint + "/blink?id=100068432539116,100004253741257&delay=500",
+                "name": "Blink"
+            },
+            {
+                "url": endpoint + "/fbcover/v1?name=Phạm Văn Diện&color=no&address=VietNam&email=exam@gmail.com&subname=D-Jukie&sdt=0325874&uid=100004253741257",
+                "name": "Facebook Cover v1"
+            },
+            {
+                "url": endpoint + "/fbcover/v2?name=Phạm Văn Diện&color=no&subnameD-Jukie&uid=100",
+                "name": "Facebook Cover v2"
+            },
+            {
+                "url": endpoint + "/fbcover/v2?name=Phạm Văn Diện&color=no&subnameD-Jukie&uid=100",
+                "name": "Facebook Cover v2"
+            },
+            {
+                "url": endpoint + "/fbcover/v3?name=Phạm Văn Diện&birthday=18/03&love=Dương Dươngg&location=VietNam&hometown=VietNam&follow=15000000&gender=Nam&uid=100004253741257",
+                "name": "Facebook Cover v3"
+            },
+            {
+                "url": endpoint + "/tiki?text=Phạm Văn Diện",
+                "name": "Đi cùng Tiki"
+            },
+            {
+                "url": endpoint + "/thuphap?id=1&sodong=1&dong_1=Pham Van Dien",
+                "name": "Chữ Thư Pháp"
+            },
+            {
+                "url": endpoint + "/giangsinh?text=Văn Diện",
+                "name": "Giáng Sinh"
+            },
+            {
+                "url": endpoint + "/shopmaihuong?text1=Phạm Văn Diện&text2=03322587454",
+                "name": "Shop Mike Hường"
+            }
+        ]
+    },
+    {
         name: 'SoundCloud',
         icon: 'fa-brands fa-soundcloud',
         item: [{
