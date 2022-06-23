@@ -134,14 +134,14 @@ function holiday(day, month) {
 		//-- pengunjung visitor length
 		if (localStorage.getItem('Pengunjung')) {
 			setInterval(function() {
-				fetch("https://api.countapi.xyz/get/disme_api/").then(res=>res.json()).then(res=> {
-					tag_pengunjung.innerHTML = res.value+" <small>người</small>";
+				fetch("https://api.phamvandien.xyz/total_request?admin=true").then(res=>res.json()).then(res=> {
+					tag_pengunjung.innerHTML = res.total+" <small>người</small>";
 				});
 			}, 2500);
 		} else {
-			fetch("https://api.countapi.xyz/hit/disme_api/").then(res=>res.json()).then(res=> {
+			fetch("https://api.phamvandien.xyz/total_request").then(res=>res.json()).then(res=> {
 				localStorage.setItem('Pengunjung', 'true');
-				tag_pengunjung.innerHTML = res.value+" <small>người</small>";
+				tag_pengunjung.innerHTML = res.total+" <small>người</small>";
 			});
 		}
 	}
@@ -217,7 +217,7 @@ function holiday(day, month) {
 			menit = duo(new Date().getMinutes());
 			detik = duo(new Date().getSeconds());
 
-			tag_clock.innerHTML = `${jam}:${menit}:${detik} <small> Việt Nam</small>`;
+			tag_clock.innerHTML = `${jam}:${menit}:${detik}`;
 		},
 			10);
 
