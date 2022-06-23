@@ -76,10 +76,6 @@ item_list = [
                 "name": "Facebook Cover v2"
             },
             {
-                "url": endpoint + "/fbcover/v2?name=Phạm Văn Diện&color=no&subnameD-Jukie&uid=100",
-                "name": "Facebook Cover v2"
-            },
-            {
                 "url": endpoint + "/fbcover/v3?name=Phạm Văn Diện&birthday=18/03&love=Dương Dươngg&location=VietNam&hometown=VietNam&follow=15000000&gender=Nam&uid=100004253741257",
                 "name": "Facebook Cover v3"
             },
