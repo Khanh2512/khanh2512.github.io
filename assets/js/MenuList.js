@@ -72,7 +72,7 @@ item_list = [
                 "name": "Facebook Cover v1"
             },
             {
-                "url": endpoint + "/fbcover/v2?name=Phạm Văn Diện&color=no&subnameD-Jukie&uid=100",
+                "url": endpoint + "/fbcover/v2?name=Phạm Văn Diện&color=no&subname=D-Jukie&uid=100",
                 "name": "Facebook Cover v2"
             },
             {
