@@ -16,7 +16,12 @@ item_list = [
         {
             "url": endpoint + '/info?id=100004253741257',
             "name": "Get Info"
-        }]
+        },
+        {
+            "url": endpoint + '/downloadfb?url=https://www.facebook.com/watch?v=587760489446657',
+            "name": "Tải video từ Facebook"
+        }
+        ]
     },
     {
         name: 'TikTok',
