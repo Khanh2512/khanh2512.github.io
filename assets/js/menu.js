@@ -25,14 +25,13 @@ try {
 				timerProgressBar: true
 			})
 			let tks = "",
-			region = navigator.language.toLowerCase(),
 			date = new Date();
 			var dataDays = holiday(date.getDate(), date.getMonth())
 			if (dataDays !== null) {
 				tks = `<p style="color: gray;">${dataDays.msg}</p>`;
 			}
 			else {
-				tks = `<p style="color: gray;">Một ngày bình thường...</p>`;
+				tks = `<p style="color: gray;">Mua src API vui lòng liên hệ Admin!</p>`;
 			}
 
 			Toast.fire({
