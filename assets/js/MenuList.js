@@ -67,6 +67,19 @@ item_list = [
         ]
     },
     {
+        name: 'Code',
+        icon: 'fa-solid fa-code',
+        item: [{
+                "url": 'https://www.phamvandien.xyz/deobfuscate/',
+                "name": "Deobfuscate"
+            },
+            {
+                "url": 'https://www.phamvandien.xyz/obfuscate/',
+                "name": "Obfuscate"
+            }
+        ]
+    },
+    {
         name: 'Canvas',
         icon: 'fa-solid fa-diagram-lean-canvas',
         item: [{
