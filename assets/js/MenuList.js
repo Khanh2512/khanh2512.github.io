@@ -74,7 +74,7 @@ item_list = [
                 "name": "Deobfuscate"
             },
             {
-                "url": 'https://www.phamvandien.xyz/obfuscate/',
+                "url": 'https://obfuscator.io/',
                 "name": "Obfuscate"
             }
         ]
