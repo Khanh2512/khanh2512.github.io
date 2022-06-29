@@ -1,4 +1,4 @@
-endpoint = `https://api.phamvandien.xyz`
+endpoint = `https://api.hovietvietkhanh.ml`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
@@ -70,7 +70,7 @@ item_list = [
         name: 'Code',
         icon: 'fa-solid fa-code',
         item: [{
-                "url": 'https://www.phamvandien.xyz/deobfuscate/',
+                "url": 'https://api.hovietvietkhanh.ml/deobfuscate/',
                 "name": "Deobfuscate"
             },
             {
@@ -273,7 +273,7 @@ item_list = [
         icon: 'fas fa-user-headset',
         item: [{
             event: 'DO NOT SPAM',
-            url: 'https://www.facebook.com/PhamVanDien.User/',
+            url: 'https://www.facebook.com/khanhinfo.idol/',
             name: 'Facebook'
         }]
     }
