@@ -1,4 +1,4 @@
-endpoint = `https://api.hovietvietkhanh.ml`
+endpoint = `https://hovietvietkhanh.ml/docs`
 message_list = [{
     icon: 'fa-solid fa-star-exclamation',
     title: 'Trang web bắt đầu hoạt động',
